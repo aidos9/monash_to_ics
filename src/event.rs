@@ -203,11 +203,11 @@ mod tests {
             vec![
                 (
                     Local.ymd(Local::now().year(), 3, 5),
-                    Local.ymd(Local::now().year(), 4, 2)
+                    Some(Local.ymd(Local::now().year(), 4, 2))
                 ),
                 (
                     Local.ymd(Local::now().year(), 4, 16),
-                    Local.ymd(Local::now().year(), 5, 28)
+                    Some(Local.ymd(Local::now().year(), 5, 28))
                 )
             ],
             XLSEvent::dates_from_string(date).unwrap()

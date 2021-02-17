@@ -331,6 +331,6 @@ mod tests {
     fn test_format_date_time() {
         let time = Utc.ymd(2021, 2, 17).and_hms(01, 0, 0);
 
-        assert_eq!("20210217T010000", format_date_time(time));
+        assert_eq!("20210217T010000Z", format_date_time(time));
     }
 }
