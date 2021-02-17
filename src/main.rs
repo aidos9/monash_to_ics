@@ -20,7 +20,7 @@ const DATES_COLUMN: usize = 10;
 const LARGEST_COLUMN: usize = 10;
 
 fn main() {
-    let matches = App::new("monash_to_ics").help("This application converts monash timetable xls files into ics files for calendar applications.")
+    let matches = App::new("monash_to_ics").long_about("This application converts monash timetable xls files into ics files for calendar applications.")
         .arg(
             Arg::with_name("file")
                 .required(true)
