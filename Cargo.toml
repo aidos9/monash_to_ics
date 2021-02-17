@@ -1,0 +1,13 @@
+[package]
+name = "monash_to_ics"
+version = "0.1.0"
+authors = ["aidos9 <20310468+aidos9@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+calamine = "0.17"
+serde = "1.0"
+clap = "2.32"
+ics = "0.5"
+chrono = "0.4"
+uuid = { version = "0.8", features = ["v4"]}
